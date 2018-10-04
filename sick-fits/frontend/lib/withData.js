@@ -8,7 +8,7 @@ function createClient({ headers }) {
     request: operation => {
       operation.setContext({
         fetchOptions: {
-          credentials: 'include',
+          credentials: 'include', // Always include cookies with any requests.
         },
         headers,
       });
