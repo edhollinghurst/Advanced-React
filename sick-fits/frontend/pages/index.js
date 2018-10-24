@@ -1,9 +1,9 @@
 import Items from '../components/Items';
 
 // Stateless functional component.
-const Home = props => (
+const Home = (props) => (
   <div>
-    <Items />
+    <Items page={parseFloat(props.query.page) || 1} />
   </div>
 );
 
