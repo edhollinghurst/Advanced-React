@@ -32,7 +32,7 @@ class Signin extends Component {
             }}
           >
             <fieldset disabled={loading} aria-busy={loading}>
-              <h2>Reset your password</h2>
+              <h2>Request a password reset</h2>
               <Error error={error} />
               {!error &&
                 !loading &&
@@ -48,7 +48,7 @@ class Signin extends Component {
                 />
               </label>
 
-              <button type="submit">Submit</button>
+              <button type="submit">Request Reset!</button>
             </fieldset>
           </Form>
         )}
